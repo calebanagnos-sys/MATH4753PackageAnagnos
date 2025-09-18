@@ -8,10 +8,10 @@
 #' @export
 #'
 #' @examples
+#' @examples
 #' data_vector <- c(10, 15, 20, 25, 30)
-#'Calculate the TSS for the vector
+#' # Calculate the TSS for the vector
 #' tss(data_vector)
-#'
 tss <- function(x) { # Calculate the mean of the vector
 mean_x <- mean(x, na.rm = TRUE)
 

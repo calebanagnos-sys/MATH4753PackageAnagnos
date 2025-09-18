@@ -17,7 +17,6 @@ This function calculates the Total Sum of Squares (TSS) for a given numeric vect
 }
 \examples{
 data_vector <- c(10, 15, 20, 25, 30)
-Calculate the TSS for the vector
+# Calculate the TSS for the vector
 tss(data_vector)
-
 }
