@@ -1,16 +1,24 @@
-#' Myfirst
+#' @title Calculate Total Sum of Squares
+#' @description
+#' This function calculates the Total Sum of Squares (TSS) for a given numeric vector
 #'
 #' @param x A numeric vector
 #'
-#' @return A list with components 'x' and 'y', where y is the square of x
+#' @return A value representing the Total Sum of Squares
 #' @export
 #'
 #' @examples
-#' myfirst(1:10)
-myfirst <- function(x) {
+#' data_vector <- c(10, 15, 20, 25, 30)
+#'Calculate the TSS for the vector
+#' tss(data_vector)
+#'
+tss <- function(x) { # Calculate the mean of the vector
+mean_x <- mean(x, na.rm = TRUE)
 
-  y <- x^2
-  plot(y~x)
-  list(x=x, y=y)
+# Calculate the sum of the squared differences from the mean
+
+tss <- sum((x - mean_x) ^ 2, na.rm = TRUE)
+
+return(tss)
 
 }
