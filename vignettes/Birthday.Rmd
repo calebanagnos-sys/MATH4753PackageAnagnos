@@ -1,0 +1,41 @@
+---
+title: "Birthday"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Birthday}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753PackageAnagnos)
+```
+
+The probability of an event, \(A\), is defined as the probability that at least 2 people having the same birthday when the class size is \(n\).
+
+This can be represented as:
+
+\[P(A^C)=\frac{365\times 364\times \cdots \times (365-n+1)}{365^n}\]
+
+Which means that:
+ \(P(A)\)
+ 
+can be calculated as:
+
+\[P(A)=1-P(A^C)\]
+
+```{r, include = TRUE}
+
+body(birthday)
+
+
+MATH4753PackageAnagnos::birthday(x = 20:25)
+
+```
