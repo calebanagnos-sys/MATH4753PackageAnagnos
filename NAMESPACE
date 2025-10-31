@@ -3,6 +3,7 @@
 export(birthday)
 export(myncurve)
 export(mysample)
+export(ntickets)
 export(tss)
 importFrom(grDevices,rainbow)
 importFrom(graphics,barplot)
