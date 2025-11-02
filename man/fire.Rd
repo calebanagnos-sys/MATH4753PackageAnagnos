@@ -8,13 +8,12 @@
 ## `fire`
 A data frame with 2 rows and 15 columns:
 \describe{
-  \item{Variable1}{Description of the first variable}
-  \item{Variable2}{Description of the second variable}
-  \item{Variable3}{... etc.}
+  \item{Distance}{The distance the fire spread}
+  \item{Damage}{The damage of the fire}
 }
 }
 \source{
-Local dataset from ILAS2019 project.
+data from Lab 7.
 }
 \usage{
 fire

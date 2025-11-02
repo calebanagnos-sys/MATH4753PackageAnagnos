@@ -13,6 +13,9 @@ ntickets(N, gamma, p)
 
 \item{p}{Probability that a person who bought a ticket shows up}
 }
+\value{
+Helps find the optimal amount of tickets to sell on a plane given the number of seats, the probability of a ticket holder not showing up and the airlines tolerance for pain. Creates two plots, one for the discrete distribution and one for the continuous distribution.
+}
 \description{
 Title
 }
